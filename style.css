@@ -730,6 +730,6 @@ button {
   margin: 0;
   background: white;
   list-style-type: none;
-  transform: translateX(100%);
+  transform: translateY(-100%);
   transition: 0.3s;
 }/*# sourceMappingURL=style.css.map */
