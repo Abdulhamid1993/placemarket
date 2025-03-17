@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<link rel="stylesheet" href="./style.css" />
+		<link rel="shortcut icon" href="./images/shop_card.png" />
+		<title>placemarket-cart</title>
+	</head>
+
+	<body>
+		<div class="container">
+			<div class="menuBar">
+				<a href="index.html" class="navText">Catalog</a>
+				<div class="storeAction">
+					<div class="searchBar">
+						<input type="text" />
+						<button>
+							<img src="./images/search_icon.svg" alt="" />
+						</button>
+					</div>
+					<button>
+						<img src="./images/like_line.svg" alt="" />
+					</button>
+				<a href="cart.html">
+					<button>
+						<img src="./images/shop_card.png" alt="" />
+					</button>
+				</a>
+					<button>
+						<a target='_blank' href='http://localhost:5963/register'>
+							<img src="./images/maki--entrance-alt1.png" alt="" />
+						</a>
+					</button>
+				</div>
+			</div>
+			<div class="card">
+				<div class="product_cart">
+					<div class="product__image">
+						<img src="https://picsum.photos/600/500" alt="Laptop laptop" />
+					</div>
+					<div class="product__details">
+						<span class="close">&times;</span>
+						<h1>Laptop laptop</h1>
+						<p class="price">$23</p>
+
+						<p class="description">
+							Lorem ipsum dolor sit amet, consectetur adipisicing elit. Alias
+							corporis cum, earum aut voluptates ipsum dignissimos magni eius
+							laboriosam, autem saepe! Deserunt praesentium dolorum eaque
+							reprehenderit laboriosam perspiciatis ea expedita ipsa placeat!
+							Hic distinctio, ducimus, porro laudantium similique quos dolores
+							sunt, animi fuga cumque quis? Ad temporibus alias nam praesentium
+							veritatis et modi id iste atque? Architect
+						</p>
+						<div class="thumbnails">
+							<img
+								src="https://picsum.photos/60/50"
+								alt="Laptop laptop"
+								class="active"
+							/>
+							<img src="https://picsum.photos/60/50" alt="Laptop laptop" />
+							<img src="https://picsum.photos/60/50" alt="Laptop laptop" />
+							<img src="https://picsum.photos/60/50" alt="Laptop laptop" />
+						</div>
+						<div class='count_products'>
+							<button class='minus'>-</button>
+							<p class='count'>1</p>
+							<button class='plus'>+</button>
+						</div>
+					</div>
+				</div>
+				<div class="product_cart">
+					<div class="product__image">
+						<img src="https://picsum.photos/600/500" alt="Laptop laptop" />
+					</div>
+					<div class="product__details">
+						<span class="close">&times;</span>
+						<h1>Laptop laptop</h1>
+						<p class="price">$23</p>
+
+						<p class="description">
+							Lorem ipsum dolor sit amet, consectetur adipisicing elit. Alias
+							corporis cum, earum aut voluptates ipsum dignissimos magni eius
+							laboriosam, autem saepe! Deserunt praesentium dolorum eaque
+							reprehenderit laboriosam perspiciatis ea expedita ipsa placeat!
+							Hic distinctio, ducimus, porro laudantium similique quos dolores
+							sunt, animi fuga cumque quis? Ad temporibus alias nam praesentium
+							veritatis et modi id iste atque? Architect
+						</p>
+						<div class="thumbnails">
+							<img
+								src="https://picsum.photos/60/50"
+								alt="Laptop laptop"
+								class="active"
+							/>
+							<img src="https://picsum.photos/60/50" alt="Laptop laptop" />
+							<img src="https://picsum.photos/60/50" alt="Laptop laptop" />
+							<img src="https://picsum.photos/60/50" alt="Laptop laptop" />
+						</div>
+						<div class='count_products'>
+							<button class='minus_plus'>-</button>
+							<p class='count'>1</p>
+							<button class='minus_plus'>+</button>
+						</div>
+					</div>
+				</div>
+				<span class="total_price">Total: 5000 rub</span>
+			</div>
+			</div>
+		</div>
+
+		<script src="./js/range.js"></script>
+
+		<script>
+			let btnViewLine = document.querySelector('#btnViewLine')
+			let btnViewGrid = document.querySelector('#btnViewGrid')
+			let fold = document.querySelector('.products-box')
+
+			btnViewGrid.onclick = () => {
+				btnViewLine.className = ''
+				btnViewGrid.className = 'active'
+				fold.className = 'products-box fold-flex'
+			}
+			btnViewLine.onclick = () => {
+				btnViewLine.className = 'active'
+				btnViewGrid.className = ''
+				fold.className = 'products-box fold-line'
+			}
+		</script>
+	</body>
+</html>
