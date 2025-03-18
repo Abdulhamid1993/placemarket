@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<link rel="stylesheet" href="./style.css" />
+		<link rel="shortcut icon" href="./images/shop_card.png" />
+		<title>placemarket-cart</title>
+	</head>
+
+	<body>
+		<div class="container">
+			<div class="menuBar">
+				<a href="index.html" class="navText">Catalog</a>
+				<div class="storeAction">
+					<div class="searchBar">
+						<input type="text" />
+						<button>
+							<img src="./images/search_icon.svg" alt="" />
+						</button>
+					</div>
+					<button>
+						<img src="./images/like_line.svg" alt="" />
+					</button>
+				<a href="cart.html">
+					<button>
+						<img src="./images/shop_card.png" alt="" />
+					</button>
+				</a>
+					<button>
+						<a target='_blank' href='http://localhost:5963/register'>
+							<img src="./images/maki--entrance-alt1.png" alt="" />
+						</a>
+					</button>
+				</div>
+			</div>
+	    <div class="checkout-form">
+        <h2>Sotuvni Rasmiylashtirish</h2>
+        <form>
+            <div class="form-group">
+                <label for="fullname">Ism va Familiya</label>
+                <input type="text" id="fullname" placeholder="Ismingizni kiriting" required>
+            </div>
+            
+            <div class="form-group">
+                <label for="phone">Telefon Raqami</label>
+                <input type="tel" id="phone" placeholder="+998 90 123 45 67" required>
+            </div>
+            
+            <div class="form-group">
+                <label for="address">Manzil</label>
+                <textarea id="address" placeholder="Manzilingizni kiriting" required></textarea>
+            </div>
+            
+            <div class="form-group">
+                <label for="payment">To'lov Usuli</label>
+                <select id="payment" required>
+                    <option value="card">Plastik karta</option>
+                    <option value="cash">Naqd pul</option>
+                </select>
+            </div>
+            
+            <button type="submit" class="submit-btn">Tasdiqlash</button>
+        </form>
+    </div>
+		</div>
+
+		<script src="./js/range.js"></script>
+
+		<script>
+			let btnViewLine = document.querySelector('#btnViewLine')
+			let btnViewGrid = document.querySelector('#btnViewGrid')
+			let fold = document.querySelector('.products-box')
+
+			btnViewGrid.onclick = () => {
+				btnViewLine.className = ''
+				btnViewGrid.className = 'active'
+				fold.className = 'products-box fold-flex'
+			}
+			btnViewLine.onclick = () => {
+				btnViewLine.className = 'active'
+				btnViewGrid.className = ''
+				fold.className = 'products-box fold-line'
+			}
+		</script>
+	</body>
+</html>
+

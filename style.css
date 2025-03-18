@@ -1081,7 +1081,7 @@ button {
 .inner_items {
   padding: 20px;
   display: flex;
-  justify-content: space-around;
+  justify-content: space-evenly;
   flex-wrap: wrap;
 }
 @media (max-width: 768px) {
@@ -1098,7 +1098,6 @@ button {
   max-width: 100%;
   padding: 40px;
   border-bottom: 1px solid #ddd;
-  align-items: center;
   flex-wrap: wrap;
   position: relative;
 }
@@ -1301,5 +1300,58 @@ button {
   }
   .order-summary__price {
     font-size: 16px;
+  }
+}
+
+.checkout-form {
+  max-width: 400px;
+  margin: 50px auto;
+  padding: 20px;
+  background: #fff;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+  border-radius: 8px;
+}
+.checkout-form h2 {
+  text-align: center;
+  margin-bottom: 20px;
+}
+.checkout-form .form-group {
+  margin-bottom: 15px;
+}
+.checkout-form .form-group label {
+  display: block;
+  font-weight: bold;
+  margin-bottom: 5px;
+}
+.checkout-form .form-group input, .checkout-form .form-group textarea, .checkout-form .form-group select {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  font-size: 16px;
+}
+.checkout-form .form-group textarea {
+  resize: vertical;
+  min-height: 80px;
+}
+.checkout-form .submit-btn {
+  width: 100%;
+  padding: 12px;
+  background: #212b35;
+  color: #fff;
+  font-size: 16px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+.checkout-form .submit-btn:hover {
+  background: #1a222b;
+}
+
+@media (max-width: 480px) {
+  .checkout-form {
+    max-width: 90%;
+    padding: 15px;
   }
 }/*# sourceMappingURL=style.css.map */
