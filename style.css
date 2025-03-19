@@ -1174,7 +1174,6 @@ button {
 }
 .cart-item__actions {
   margin-left: auto;
-  text-align: right;
 }
 .cart-item__delete {
   background: none;
@@ -1202,14 +1201,16 @@ button {
 .cart-item .cart-item__quantity {
   max-width: 150px;
   margin-top: 10px;
-  padding: 10px 25px;
+  margin-bottom: 20px;
+  padding: 8px 30px;
   border: 1px solid #dadbdc;
 }
 .cart-item .cart-item__quantity span {
-  font-size: 18px;
+  font-size: 24px;
   margin: 0 15px;
 }
 .cart-item .cart-item__quantity button {
+  font-size: 30px;
   background: none;
   border: none;
 }

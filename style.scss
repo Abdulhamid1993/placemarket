@@ -1256,7 +1256,7 @@ $shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
 
 	&__actions {
 		margin-left: auto;
-		text-align: right;
+		// text-align: right;
 	}
 
 	&__delete {
@@ -1286,15 +1286,17 @@ $shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
 	.cart-item__quantity {
 		max-width: 150px;
 		margin-top: 10px;
-		padding: 10px 25px;
+		margin-bottom: 20px;
+		padding: 8px 30px;
 		border: 1px solid #dadbdc;
 
 		span {
-			font-size: 18px;
+			font-size: 24px;
 			margin: 0 15px;
 		}
 
 		button {
+			font-size: 30px;
 			background: none;
 			border: none;
 		}
