@@ -1,11 +1,24 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700;900&display=swap');
 
+
+
+:root {
+	--primary-color: #1E3A8A; /* Темно-синий */
+	--secondary-color: #0284C7; /* Бирюзовый */
+	--bg-color: #F8FAFC; /* Светло-серый фон */
+	--card-bg: #FFFFFF; /* Белый цвет карточек */
+	--text-color: #1E293B; /* Темный цвет текста */
+	--btn-hover: #0369A1; /* Темный бирюзовый */
+}
+
 * {
 	margin: 0;
 	padding: 0;
 	box-sizing: border-box;
 	font-family: 'Roboto';
 	text-decoration: none;
+	// background-color: var(--bg-color);
+	color: var(--text-color);
 }
 
 button {
@@ -15,6 +28,16 @@ button {
 .container {
 	max-width: 1440px;
 	margin: 0 auto;
+}
+
+.menuBar {
+	display: flex;
+	margin: 0 auto;
+	align-items: center;
+	justify-content: space-around;
+	background-color: #5340ff;
+	padding: 10px 0;
+	border-bottom: 1px solid #ccc;
 	.menu {
 		display: none;
 	}
@@ -24,23 +47,16 @@ button {
 			display: block;
 		}
 	}
-}
-
-.menuBar {
-	max-width: 1420px;
-	display: flex;
-	align-items: center;
-	justify-content: space-between;
-	padding: 15px 0;
-	border-bottom: 1px solid #ccc;
 
 	.navText {
-		font-size: 24px;
+		background-color: #5340ff;
+		font-size: 34px;
 		font-weight: 700;
-		color: #212b35;
+		color: #fff;
 	}
 
 	.storeAction {
+		background-color: #5340ff;
 		display: flex;
 		align-items: center;
 		justify-content: space-between;
@@ -50,11 +66,14 @@ button {
 			display: flex;
 			align-items: center;
 			border: 1px solid #ccc;
+			background-color: #5340ff;
 			gap: 15px;
 			padding: 6px 12px;
 			border-radius: 8px;
 
 			input {
+				background-color: #5340ff;
+				color: #fff;
 				border: none;
 				outline: none;
 				@media (max-width: 480px) {
@@ -68,19 +87,28 @@ button {
 			button {
 				width: 20px;
 				height: 20px;
+				outline: #afacc7;
+				background-color: #5340ff;
 			}
 		}
 
 		button {
 			width: 30px;
 			height: 30px;
-			background: none;
+			background-color: #5340ff;
 			border: none;
 		}
-
+		
 		img {
 			width: 100%;
+			background-color: #5340ff;
 		}
+	}
+	a {
+		path {
+			background-color: none;
+		}
+		background-color: #5340ff;
 	}
 }
 
@@ -88,7 +116,8 @@ button {
 	display: grid;
 	grid-template-columns: 210px auto;
 	column-gap: 20px;
-	padding: 0 8px;
+	margin-top: 35px;
+	padding: 0 20px;
 	@media (max-width: 480px) {
 		grid-template-columns: 390px auto;
 	}
@@ -108,7 +137,7 @@ button {
 		}
 
 		.paragraphFilter {
-			font-size: 12px;
+			font-size: 18px;
 			font-weight: 500;
 			color: #212b35;
 			margin-bottom: 8px;
@@ -139,16 +168,15 @@ button {
 				}
 
 				&:hover {
-					background: #212b35;
-					color: #fff;
-					border-color: #212b35;
+					background: #7C73FF ;
+					color: #000;
 
 					svg path {
-						fill: #fff;
+						fill: #000;
 					}
 					svg path {
-						fill: #ffffff;
-						stroke: #ffffff;
+						fill: #000;
+						stroke: #000;
 					}
 					svg rect {
 						fill: #212b35;
@@ -156,35 +184,19 @@ button {
 					}
 				}
 				&.active {
-					background: #212b35;
-					border-color: #212b35;
-
+					background: #7C73FF ;
+					
 					svg path {
-						fill: #fff;
+						fill: #000;
 					}
 					svg path {
-						fill: #ffffff;
-						stroke: #ffffff;
+						fill: #000;
+						stroke: #000;
 					}
 					svg rect {
-						fill: #212b35;
-						stroke: #fff;
+						fill: #fff;
+						stroke: #000;
 					}
-
-					// &:hover {
-					// 	background: #fff;
-					// 	svg path {
-					// 		fill: #212b35;
-					// 	}
-					// 	svg path {
-					// 		fill: #212b35;
-					// 		stroke: #212b35;
-					// 	}
-					// 	svg rect {
-					// 		fill: #fff;
-					// 		stroke: #212b35;
-					// 	}
-					// }
 				}
 			}
 		}
@@ -443,7 +455,7 @@ button {
 			right: 25%;
 			position: absolute;
 			border-radius: 5px;
-			background: #212b35;
+			background: #7C73FF ;
 		}
 		.range-input {
 			position: relative;
@@ -462,7 +474,7 @@ button {
 			height: 17px;
 			width: 17px;
 			border-radius: 50%;
-			background: #212b35;
+			background: #7C73FF ;
 			pointer-events: auto;
 			-webkit-appearance: none;
 			box-shadow: 0 0 6px rgba(0, 0, 0, 0.05);
@@ -535,7 +547,7 @@ button {
 
 			input:checked + .slider {
 				background-color: #212b35;
-				border: 1px solid #212b35;
+				border: 1px solid #7C73FF ;
 			}
 
 			input:focus + .slider {
@@ -573,7 +585,7 @@ button {
 			}
 
 			&:hover {
-				background: #212b35;
+				background: #7C73FF ;
 				color: white;
 
 				svg path {
@@ -585,8 +597,8 @@ button {
 				width: 20px;
 			}
 			&.active {
-				background: #212b35;
-				border: 1px solid #212b35;
+				background: #7C73FF ;
+				border: 1px solid #7C73FF ;
 				color: #fff;
 
 				&:hover {
@@ -624,7 +636,9 @@ button {
 			margin: 10px;
 			max-width: 350px;
 			min-width: 200px;
-			box-shadow: 0 3px 5px #00000010;
+			-webkit-box-shadow: 2px 2px 32px -10px rgba(175,164,245,1);
+			-moz-box-shadow: 2px 2px 32px -10px rgba(175,164,245,1);
+			box-shadow: 2px 2px 32px -10px rgba(175,164,245,1);
 			.details {
 				margin-top: 8px;
 
@@ -672,6 +686,7 @@ button {
 				height: 200px;
 				img {
 					transition: transform 0.3s;
+					border-radius: 5px;
 					width: 100%;
 					height: 100%;
 				}
@@ -683,22 +698,23 @@ button {
 					p {
 						color: #5a5b5d;
 						font-weight: 500;
-						font-size: 14px;
+						font-size: 18px;
 						span {
 							display: block;
 							font-size: 12px;
 						}
 					}
 					button {
-						background: #212b35;
-						border: 1px solid #212b35;
+						background: #7C73FF ;
+						border: 1px solid #7C73FF ;
+						min-width: 63px;
 						border-radius: 4px;
 						width: 50px;
-						padding: 2px;
 						transition: background 0.3s;
 						svg {
 							transform: scale(1.1);
 							width: 20px;
+							background: none;
 						}
 						svg path {
 							fill: #fff;
@@ -706,19 +722,19 @@ button {
 						}
 
 						&:hover {
-							background: #fff;
+							background: #958DFF;
 
 							svg path {
-								fill: #212b35;
+								fill: #fff;
 							}
 						}
 					}
 				}
 			}
 			h1 {
-				font-size: 16px;
-				color: #212b35;
-				font-weight: 600;
+				font-size: 18px;
+				font-weight: bold;
+				// color: var(--primary-color);
 			}
 		}
 	}
@@ -733,19 +749,19 @@ button {
 		button {
 			background: #fff;
 			color: #212b35;
-			border: 1px solid #212b35;
+			border: 1px solid #7C73FF ;
 			width: 24px;
 			height: 24px;
 			border-radius: 4px;
 			transition: background 0.3s color 0.3s;
 
 			&:hover {
-				background: #212b35;
+				background: #7C73FF ;
 				color: #fff;
 			}
 			&.active {
 				color: #fff;
-				background: #212b35;
+				background: #7C73FF ;
 			}
 		}
 	}
@@ -1433,7 +1449,7 @@ $shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
 		width: 100%;
 		margin-top: 16px;
 		padding: 12px;
-		background: #212b35;
+		background: #7C73FF ;
 		color: #fff;
 		border: none;
 		font-size: 14px;
@@ -1491,7 +1507,7 @@ $shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
 	.submit-btn {
 			width: 100%;
 			padding: 12px;
-			background: #212b35;
+			background: #7C73FF ;
 			color: #fff;
 			font-size: 16px;
 			border: none;
@@ -1523,7 +1539,7 @@ margin-bottom: 100px;
 					padding: 10px 15px;
 					border: none;
 					color: #fff;
-					background: #212b35;
+					background: #7C73FF ;
 					border-radius: 8px;
 					cursor: pointer;
 					transition: background 0.3s ease;
