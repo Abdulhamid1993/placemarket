@@ -168,15 +168,15 @@ button {
 				}
 
 				&:hover {
-					background: #7C73FF ;
-					color: #000;
+					background: #0056b3 ;
+					color: #fff;
 
 					svg path {
-						fill: #000;
+						fill: #fff;
 					}
 					svg path {
-						fill: #000;
-						stroke: #000;
+						fill: #fff;
+						stroke: #fff;
 					}
 					svg rect {
 						fill: #212b35;
@@ -184,18 +184,18 @@ button {
 					}
 				}
 				&.active {
-					background: #7C73FF ;
+					background: #0056b3 ;
 					
 					svg path {
 						fill: #000;
 					}
 					svg path {
-						fill: #000;
-						stroke: #000;
+						fill: #fff;
+						stroke: #fff;
 					}
 					svg rect {
 						fill: #fff;
-						stroke: #000;
+						stroke: #fff;
 					}
 				}
 			}
@@ -432,6 +432,8 @@ button {
 			width: 100%;
 			height: 100%;
 			outline: none;
+			background-color: #0056b3;
+			color: #fff;
 			font-size: 16px;
 			border-radius: 5px;
 			text-align: start;
@@ -455,7 +457,7 @@ button {
 			right: 25%;
 			position: absolute;
 			border-radius: 5px;
-			background: #7C73FF ;
+			background: #0056b3 ;
 		}
 		.range-input {
 			position: relative;
@@ -474,7 +476,7 @@ button {
 			height: 17px;
 			width: 17px;
 			border-radius: 50%;
-			background: #7C73FF ;
+			background: #0056b3 ;
 			pointer-events: auto;
 			-webkit-appearance: none;
 			box-shadow: 0 0 6px rgba(0, 0, 0, 0.05);
@@ -547,7 +549,7 @@ button {
 
 			input:checked + .slider {
 				background-color: #212b35;
-				border: 1px solid #7C73FF ;
+				border: 1px solid #0056b3 ;
 			}
 
 			input:focus + .slider {
@@ -585,7 +587,7 @@ button {
 			}
 
 			&:hover {
-				background: #7C73FF ;
+				background: #0056b3 ;
 				color: white;
 
 				svg path {
@@ -597,8 +599,8 @@ button {
 				width: 20px;
 			}
 			&.active {
-				background: #7C73FF ;
-				border: 1px solid #7C73FF ;
+				background: #0056b3 ;
+				border: 1px solid #0056b3 ;
 				color: #fff;
 
 				&:hover {
@@ -632,21 +634,31 @@ button {
 			grid-template-columns: repeat(1, 3fr);
 		}
 
+	
+
 		.card {
 			margin: 10px;
 			max-width: 350px;
 			min-width: 200px;
-			-webkit-box-shadow: 2px 2px 32px -10px rgba(175,164,245,1);
-			-moz-box-shadow: 2px 2px 32px -10px rgba(175,164,245,1);
-			box-shadow: 2px 2px 32px -10px rgba(175,164,245,1);
+			box-shadow: 0px 1px 20px 0px rgba(151,168,224,0.75);
+			-webkit-box-shadow: 0px 1px 20px 0px rgba(151,168,224,0.75);
+			-moz-box-shadow: 0px 1px 20px 0px rgba(151,168,224,0.75);
+			
 			.details {
 				margin-top: 8px;
-
+				
 				.price {
 					margin-top: 8px;
 					display: flex;
 					align-items: center;
 					justify-content: space-between;
+					.old-price {
+						font-size: 12px;
+						font-weight: 500;
+						span {
+							text-decoration: line-through;
+						}
+					}
 				}
 			}
 		}
@@ -674,6 +686,7 @@ button {
 			padding: 8px;
 			padding-bottom: 14px;
 			border-radius: 6px;
+			
 
 			&:hover {
 				.img-block img {
@@ -705,8 +718,8 @@ button {
 						}
 					}
 					button {
-						background: #7C73FF ;
-						border: 1px solid #7C73FF ;
+						background: #0056b3 ;
+						border: 1px solid #0056b3 ;
 						min-width: 63px;
 						border-radius: 4px;
 						width: 50px;
@@ -749,19 +762,19 @@ button {
 		button {
 			background: #fff;
 			color: #212b35;
-			border: 1px solid #7C73FF ;
+			border: 1px solid #0056b3 ;
 			width: 24px;
 			height: 24px;
 			border-radius: 4px;
 			transition: background 0.3s color 0.3s;
 
 			&:hover {
-				background: #7C73FF ;
+				background: #0056b3 ;
 				color: #fff;
 			}
 			&.active {
 				color: #fff;
-				background: #7C73FF ;
+				background: #0056b3 ;
 			}
 		}
 	}
@@ -1449,7 +1462,7 @@ $shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
 		width: 100%;
 		margin-top: 16px;
 		padding: 12px;
-		background: #7C73FF ;
+		background: #0056b3 ;
 		color: #fff;
 		border: none;
 		font-size: 14px;
@@ -1507,7 +1520,7 @@ $shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
 	.submit-btn {
 			width: 100%;
 			padding: 12px;
-			background: #7C73FF ;
+			background: #0056b3 ;
 			color: #fff;
 			font-size: 16px;
 			border: none;
@@ -1539,7 +1552,7 @@ margin-bottom: 100px;
 					padding: 10px 15px;
 					border: none;
 					color: #fff;
-					background: #7C73FF ;
+					background: #0056b3 ;
 					border-radius: 8px;
 					cursor: pointer;
 					transition: background 0.3s ease;

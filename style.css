@@ -173,33 +173,33 @@ button {
   transition: fill 0.3s ease;
 }
 .main .views .line button:hover {
-  background: #7C73FF;
-  color: #000;
+  background: #0056b3;
+  color: #fff;
 }
 .main .views .line button:hover svg path {
-  fill: #000;
+  fill: #fff;
 }
 .main .views .line button:hover svg path {
-  fill: #000;
-  stroke: #000;
+  fill: #fff;
+  stroke: #fff;
 }
 .main .views .line button:hover svg rect {
   fill: #212b35;
   stroke: #fff;
 }
 .main .views .line button.active {
-  background: #7C73FF;
+  background: #0056b3;
 }
 .main .views .line button.active svg path {
   fill: #000;
 }
 .main .views .line button.active svg path {
-  fill: #000;
-  stroke: #000;
+  fill: #fff;
+  stroke: #fff;
 }
 .main .views .line button.active svg rect {
   fill: #fff;
-  stroke: #000;
+  stroke: #fff;
 }
 
 .sort {
@@ -406,6 +406,8 @@ button {
   width: 100%;
   height: 100%;
   outline: none;
+  background-color: #0056b3;
+  color: #fff;
   font-size: 16px;
   border-radius: 5px;
   text-align: start;
@@ -429,7 +431,7 @@ button {
   right: 25%;
   position: absolute;
   border-radius: 5px;
-  background: #7C73FF;
+  background: #0056b3;
 }
 .price .wrapper .range-input {
   position: relative;
@@ -448,7 +450,7 @@ button {
   height: 17px;
   width: 17px;
   border-radius: 50%;
-  background: #7C73FF;
+  background: #0056b3;
   pointer-events: auto;
   -webkit-appearance: none;
   box-shadow: 0 0 6px rgba(0, 0, 0, 0.05);
@@ -516,7 +518,7 @@ button {
 }
 .actions .top .switch input:checked + .slider {
   background-color: #212b35;
-  border: 1px solid #7C73FF;
+  border: 1px solid #0056b3;
 }
 .actions .top .switch input:focus + .slider {
   box-shadow: 0 0 1px rgba(33, 43, 53, 0.062745098);
@@ -548,7 +550,7 @@ button {
   transition: fill 0.3s ease;
 }
 .actions .bottom button:hover {
-  background: #7C73FF;
+  background: #0056b3;
   color: white;
 }
 .actions .bottom button:hover svg path {
@@ -558,8 +560,8 @@ button {
   width: 20px;
 }
 .actions .bottom button.active {
-  background: #7C73FF;
-  border: 1px solid #7C73FF;
+  background: #0056b3;
+  border: 1px solid #0056b3;
   color: #fff;
 }
 .actions .bottom button.active:hover {
@@ -599,7 +601,9 @@ button {
   margin: 10px;
   max-width: 350px;
   min-width: 200px;
-  box-shadow: 2px 2px 32px -10px rgb(175, 164, 245);
+  box-shadow: 0px 1px 20px 0px rgba(151, 168, 224, 0.75);
+  -webkit-box-shadow: 0px 1px 20px 0px rgba(151, 168, 224, 0.75);
+  -moz-box-shadow: 0px 1px 20px 0px rgba(151, 168, 224, 0.75);
 }
 .product-container .fold-flex .card .details {
   margin-top: 8px;
@@ -609,6 +613,13 @@ button {
   display: flex;
   align-items: center;
   justify-content: space-between;
+}
+.product-container .fold-flex .card .details .price .old-price {
+  font-size: 12px;
+  font-weight: 500;
+}
+.product-container .fold-flex .card .details .price .old-price span {
+  text-decoration: line-through;
 }
 .product-container .fold-line .card {
   display: flex;
@@ -653,8 +664,8 @@ button {
   font-size: 12px;
 }
 .product-container .products-box .card .details .price button {
-  background: #7C73FF;
-  border: 1px solid #7C73FF;
+  background: #0056b3;
+  border: 1px solid #0056b3;
   min-width: 63px;
   border-radius: 4px;
   width: 50px;
@@ -689,19 +700,19 @@ button {
 .product-container .pagination button {
   background: #fff;
   color: #212b35;
-  border: 1px solid #7C73FF;
+  border: 1px solid #0056b3;
   width: 24px;
   height: 24px;
   border-radius: 4px;
   transition: background 0.3s color 0.3s;
 }
 .product-container .pagination button:hover {
-  background: #7C73FF;
+  background: #0056b3;
   color: #fff;
 }
 .product-container .pagination button.active {
   color: #fff;
-  background: #7C73FF;
+  background: #0056b3;
 }
 
 @media (max-width: 480px) {
@@ -1356,7 +1367,7 @@ button {
   width: 100%;
   margin-top: 16px;
   padding: 12px;
-  background: #7C73FF;
+  background: #0056b3;
   color: #fff;
   border: none;
   font-size: 14px;
@@ -1408,7 +1419,7 @@ button {
 .checkout-form .submit-btn {
   width: 100%;
   padding: 12px;
-  background: #7C73FF;
+  background: #0056b3;
   color: #fff;
   font-size: 16px;
   border: none;
@@ -1437,7 +1448,7 @@ button {
   padding: 10px 15px;
   border: none;
   color: #fff;
-  background: #7C73FF;
+  background: #0056b3;
   border-radius: 8px;
   cursor: pointer;
   transition: background 0.3s ease;
